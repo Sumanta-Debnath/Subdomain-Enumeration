@@ -6,8 +6,8 @@ def get_request(url):
       result = rqs.get("https://" + url)
       if(result):
         print("[+] Subdomain Discovered ----> " + url)
-      except:
-        pass
+  except:
+      pass
 def main():
   target_url = sys.argv[1]
   with open("subdmainwordlist.txt","r") as wordlist:
